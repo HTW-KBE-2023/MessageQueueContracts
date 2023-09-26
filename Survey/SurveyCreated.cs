@@ -3,8 +3,8 @@
     public class SurveyCreated
     {
         public Guid SurveyId { get; set; }
-        public string? Title { get; set; }
-        public string? Description { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
         public IList<SurveyOption> SurveyOptions { get; set; } = new List<SurveyOption>();
 
         public class SurveyOption
