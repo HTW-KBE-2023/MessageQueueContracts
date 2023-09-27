@@ -1,9 +1,10 @@
 ﻿namespace MessagingContracts.Survey
 {
-    public class VoteOnSurveyChanged
+    public class SurveyOptionSelectionChanged
     {
         public Guid SurveyId { get; set; }
 
-        public IList<(Guid OptionId, int change)> Changes { get; set; }
+        public Guid SurveyOptionId { get; set; }
+        public int TimesSelected { get; set; }
     }
 }
